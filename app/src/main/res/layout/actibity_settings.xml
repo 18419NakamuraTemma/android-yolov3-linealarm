@@ -1,0 +1,1628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="636dp"
+        android:text="■"
+        android:textColor="#FFFFFF"
+        android:textSize="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="106dp"
+        android:layout_height="141dp"
+        android:text="■"
+        android:textColor="#FFFFFF"
+        android:textSize="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:text="通知設定"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:text="                    野菜                      個数          通知"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="28dp"
+        android:layout_marginVertical="100dp"
+        android:layout_marginTop="50dp">
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout0"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="じゃが芋　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+                <Spinner
+                    android:id="@+id/spinner0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle0"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="紅はるか　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle1"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:text="シャドー・クイーン　　"
+                    android:autoSizeTextType="uniform" />
+
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle2"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="里芋　　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform" />
+
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle3"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人参　　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+
+                <Spinner
+                    android:id="@+id/spinner4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle4"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大根　　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle5"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout6"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="紅芯大根　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle6"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout7"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ミックスキャロット　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle7"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout8"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="玉ねぎ　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+
+                <Spinner
+                    android:id="@+id/spinner8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle8"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout9"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="マッシュルーム　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle9"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout10"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="フルーツかぶ　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle10"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout11"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="スティックブロッコリー"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle11"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout12"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ネギ　　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+
+                <Spinner
+                    android:id="@+id/spinner12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="40dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle12"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout13"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="葉ニンニク　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle13"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout14"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:text="セロリ　　　　　　　　" />
+
+                <Spinner
+                    android:id="@+id/spinner14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:id="@+id/toggle14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout15"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ほうれん草　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle15"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout16"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ディル　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle16"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout17"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="わさび菜　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle17"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout18"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="菜花　　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle18"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout19"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ベビーリーフ　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle19"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout20"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ラディッシュ　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle20"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout21"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="パクチー　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle21"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout22"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="赤からし菜　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="40dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle22"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout23"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="リーフレタス・赤　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle23"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout24"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="リーフレタス・緑　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle24"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout25"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小松菜　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle25"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout26"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="べか菜　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+                <Spinner
+                    android:id="@+id/spinner26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle26"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout27"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="春菊　　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle27"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout28"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="サラダ水菜　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+                <Spinner
+                    android:id="@+id/spinner28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle28"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout29"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="赤サラダほうれん草　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle29"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout30"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="レモン　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle30"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LinearLayout31"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ルッコラ　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="40dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle31"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout32"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="オークレタス・赤　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle32"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout33"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="オークレタス・緑　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle33"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout34"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="リンゴ　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle34"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout35"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="王林　　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle35"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout36"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="菊芋　　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle36"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout37"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="サラダセット　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle37"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout38"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ゴルゴ　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle38"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout39"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="シイタケ　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle39"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout40"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="赤水菜　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle40"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout41"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小かぶ　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="40dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle41"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout42"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="白菜　　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+                <Spinner
+                    android:id="@+id/spinner42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle42"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout43"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ニンニク　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle43"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout44"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="赤大根　　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle44"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout45"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="レンコン　　　　　　　"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeTextType="uniform"/>
+
+                <Spinner
+                    android:id="@+id/spinner45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/list"
+                    android:scrollbarSize="30dp"
+                    android:spinnerMode="dialog" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/toggle45"
+                    android:checked="true"
+                    android:switchMinWidth="60dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="戻る"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
