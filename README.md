@@ -1,4 +1,4 @@
-#Android-yolov3-linealarm
+Android-yolov3-linealarm
 
 this application that uses deep learning to notify users of the availability of products on LINE
 
