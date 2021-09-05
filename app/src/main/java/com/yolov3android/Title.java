@@ -1,11 +1,13 @@
 package com.yolov3android;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class Title extends AppCompatActivity {
@@ -21,7 +23,7 @@ public class Title extends AppCompatActivity {
 
 
 
-        Button sendButton = findViewById(R.id.button_start);
+        ImageButton sendButton = findViewById(R.id.button_start);
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +32,7 @@ public class Title extends AppCompatActivity {
             }
         });
 
-        Button SettingButton = findViewById(R.id.button_setting);
+        ImageButton SettingButton = findViewById(R.id.button_setting);
         SettingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
